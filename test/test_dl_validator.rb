@@ -70,8 +70,16 @@ class DlValidatorTest < Test::Unit::TestCase
 
       should 'return invalid for Kentucky' do
         license = 'ka12345678'
-        assert !DlValidator.valid?(license, 'KY')
+        assert DlValidator.invalid?(license, 'KY')
       end
+
+      should 'return valid for illinois with 1 alpha and 11 numeric' do
+        license = 'b123456789012'
+        assert DlValidator.valid?(license, 'IL')
+      end
+
+
+
 
     end
 
