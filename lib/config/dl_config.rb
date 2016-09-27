@@ -104,7 +104,7 @@ module DlValidator
         'TX' => /^[0-9]{7,8}$/,                                                                                             # Format: 7-8Numeric
         'UT' => /^[0-9]{4,10}$/,                                                                                            # Format: 4-10Numeric
         'VT' => /(^[0-9]{8}$)|(^[0-9]{7}[A]$)/,                                                                             # Format: 8Numeric or 7Numeric+A
-        'VA' => /(^[A-Z]{1}[0-9]{9,11}$)|(^[0-9]{9}$)/,                                                                     # Format: 1Alpha+9Numeric or 1Alpha+10Numeric or 1Alpha+11Numeric or 9Numeric
+        'VA' => /(^[A-Z]{1}[0-9]{8,11}$)|(^[0-9]{9}$)/,                                                                     # Format: 1Alpha+9Numeric or 1Alpha+10Numeric or 1Alpha+11Numeric or 9Numeric
         'WA' => /^(?=.{12}$)[A-Z]{1,7}[A-Z0-9\*]{4,11}$/,                                                                   # Format: 1-7Alpha+any combination of Alpha, Numeric, or * for a total of 12 characters
         'WV' => /(^[0-9]{7}$)|(^[A-Z]{1,2}[0-9]{5,6}$)/,                                                                    # Format: 7Numeric or 1-2Alpha+5-6Numeric
         'WI' => /^[A-Z]{1}[0-9]{13}$/,                                                                                      # Format: 1Alpha+13Numeric

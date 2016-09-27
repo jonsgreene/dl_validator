@@ -73,9 +73,19 @@ class DlValidatorTest < Test::Unit::TestCase
         assert DlValidator.invalid?(license, 'KY')
       end
 
-      should 'return valid for illinois with 1 alpha and 11 numeric' do
-        license = 'b123456789012'
+      should 'return valid for Illinois' do
+        license = 'D61672179225'
         assert DlValidator.valid?(license, 'IL')
+      end
+
+      should 'return valid for Texas' do
+        license = '38941528'
+        assert DlValidator.valid?(license, 'TX')
+        end
+
+      should 'return valid for Virginia' do
+        license = 'A62621386'
+        assert DlValidator.valid?(license, 'VA')
       end
 
 
