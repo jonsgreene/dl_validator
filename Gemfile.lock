@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    dl_validator (0.0.7)
+    dl_validator (0.0.9)
 
 GEM
   remote: https://rubygems.org/
